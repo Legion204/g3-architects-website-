@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* sheared style */
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Sora', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    border: 0;
+    background: #FF900E;
+    color: #FFF;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn-primary:hover{
+    background: black;
+    color: #FF900E;
+}
+
+/* header styles */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3 {
+    color: #131313;
+    font-family: 'Work Sans';
+    font-size: 45px;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.banner-title {
+    color: #131313;
+    font-family: 'Work Sans';
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+    font-family: 'Work Sans';
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* responsive media queries */
+
+/* phone responsive style  */
+
+@media screen and (max-width: 576px) {
+    header{
+        padding:5px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tab and medium device */
+@media screen and (min-width: 576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+    }
+
+    header{
+        padding: 50px;
+    }
+}
